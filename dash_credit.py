@@ -44,8 +44,8 @@ with st.sidebar:
         st.error(f"Error: Logo file not found at {logo_path}")
 
  # Page selection
-        page =  st.selectbox("Menu", ["Home", "Customer", "Customer portfolio"])
+    page =  st.selectbox("Menu", ["Home", "Customer", "Customer portfolio"])
     
-         st.markdown("-----")
+    st.markdown("-----")
         
-        st.write("By: Amit GAUTAM")
+    st.write("By: Amit GAUTAM")
