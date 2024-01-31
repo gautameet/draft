@@ -124,11 +124,9 @@ if page == "Customer":
                             st.warning('programme error programme') 
                             st.write(':dizzy_face:')             
     
-    
-    
-    
-    
-    
     except:
         st.warning('**_Customer not found_**')
 
+# Customer portfolio analysis        
+if page == 'Customer portfolio':
+    st.write("### Customer portfolio analysis")
