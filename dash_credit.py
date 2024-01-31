@@ -48,7 +48,12 @@ except Exception as e:
     # Print the exception message for debugging
     print(f"Error concatenating DataFrames: {e}")
 
+try:
     raw_app['YEARS_EMPLOYED'] = raw_app['DAYS_EMPLOYED'].apply(lambda x : -x/-365)
+except Exception as e:
+    # Print the exception message for debugging
+    print(f"Error : {e}")
+    
     raw_app['AGE'] = raw_app['DAYS_BIRTH'].apply(lambda x : -x/-365) // (-365)
     raw_app['CREDIT'] = raw_app['AMT_CREDIT']   
     raw_app['CREDIT'] = raw_app['AMT_CREDIT'].apply(lambda x: 'No' if math.isnan(x) else 'Yes')
