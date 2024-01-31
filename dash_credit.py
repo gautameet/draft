@@ -64,7 +64,7 @@ if page == "Home":
 if page == "Customer":
     st.title("💵 Welcome to the Customer Page")
     ".\n"
-    .\n"
+    ".\n"
         
     st.header("Welcome to the customers' page.\n")
     ".\n"
