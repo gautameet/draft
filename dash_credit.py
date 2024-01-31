@@ -61,3 +61,11 @@ if page == "Home":
                 "\nThis dashboard is composed of following pages :\n"
                 "- **Customer**: to find out all the information related to the customer.\n")
 
+if page == "Customer":
+    st.title("💵 Welcome to the Customer Page")
+    ".\n"
+    .\n"
+        
+    st.header("Welcome to the customers' page.\n")
+    ".\n"
+    st.subheader("Please enter your ID to know the results of your demands. \n") 
