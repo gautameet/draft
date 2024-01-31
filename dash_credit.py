@@ -71,21 +71,21 @@ if page == "Customer":
     st.subheader("Please enter your ID to know the results of your demands. \n")
 
     st.markdown("Your ID:")
-        ID=st.number_input(" ", min_value=100002, max_value=456255)
-        try:
-            raw_app_id = get_data(raw_app, ID)
-            with st.spinner('Custumer....'):
-                st.writer('Customer .....')
-                with st.container():
-                    col1, col2 = st.columns([1.5,2.5])      
-                    with col1:
-                        st.write("#### Customer detail " + str(ID))
-                        st.markdown("* **Status : " + str(id_raw_app['NAME_FAMILY_STATUS'].values[0]) + "**")
-                        st.markdown("* **Number of children) : " + str(id_raw_app['CNT_CHILDREN'].values[0]) + "**")
-                        st.markdown("* **Employment: " + str(id_raw_app['NAME_INCOME_TYPE'].values[0]) + "**")
-                        st.markdown("* **Current Loan : " + str(id_raw_app['CREDIT'].values[0]) + "**")
-                    with col2:
-                        fig = plt.figure(figsize=(2,2))
-                        st.pyplot(radat_id_plot(ID,fig))
-        st.markdown("-----")
+    ID=st.number_input(" ", min_value=100002, max_value=456255)
+    try:
+        raw_app_id = get_data(raw_app, ID)
+        with st.spinner('Custumer....'):
+            st.writer('Customer .....')
+            with st.container():
+                col1, col2 = st.columns([1.5,2.5])      
+                with col1:
+                    st.write("#### Customer detail " + str(ID))
+                    st.markdown("* **Status : " + str(id_raw_app['NAME_FAMILY_STATUS'].values[0]) + "**")
+                    st.markdown("* **Number of children) : " + str(id_raw_app['CNT_CHILDREN'].values[0]) + "**")
+                    st.markdown("* **Employment: " + str(id_raw_app['NAME_INCOME_TYPE'].values[0]) + "**")
+                    st.markdown("* **Current Loan : " + str(id_raw_app['CREDIT'].values[0]) + "**")
+                with col2:
+                    fig = plt.figure(figsize=(2,2))
+                    st.pyplot(radat_id_plot(ID,fig))
+    st.markdown("-----")
 
