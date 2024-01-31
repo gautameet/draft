@@ -88,4 +88,6 @@ if page == "Customer":
                     fig = plt.figure(figsize=(2,2))
                     st.pyplot(radat_id_plot(ID,fig))
         st.markdown("-----")
+        except:
+            st.warning('**_Customer not found_**')
 
