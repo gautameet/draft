@@ -1,1 +1,12 @@
-
+streamlit
+altair
+sklearn
+PIL
+requests
+plotly
+os
+zipfile
+pickle
+matplotlib
+math
+shap
