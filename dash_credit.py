@@ -87,9 +87,9 @@ if page == "Customer":
                 with col2:
                     fig = plt.figure(figsize=(2,2))
                     st.pyplot(radat_id_plot(ID,fig))
-        st.markdown("-----")
+            st.markdown("-----")
 
-        with st.container():
+            with st.container():
                     st.write("#### Similar type of Customers ")
                     try:
                         col3, col4 = st.columns([3,1])
@@ -103,9 +103,26 @@ if page == "Customer":
                             st.markdown("_(either " + str(N_knn1*100/N_knn) + "% clients with similar payment problems)_")
                     except:
                         st.info('**_No similar customer_**')
-    
-    
-    
+            st.markdown("-----")
+            with st.container():
+                st.write("#### Customer solvability prediction ")
+                pred = st.button('Calculation')
+                if pred:
+                    with st.spinner('Calculation...'):
+                        try:
+                            prediction = requests.get("https://urd9pbjwdlnjfnaoncmtdw.streamlit.app/predict?ID=" + str(ID)).json()
+                            if prediction["target"]==0:
+                                st.write(':smiley:')
+                                st.success('Client solvable _(Target = 0)_, prediction difficult level at **' + str(prediction["risk"] * 100) + '%**')
+                            elif prediction["target"]==1:
+                                st.write(':confused:')
+                                st.error('Client non solvable _(Target = 1)_, prediction difficult level at **' + str(prediction["risk"] * 100) + '%**')  
+                            st.write('**Interpretability**')
+                            fig = plt.figure(figsize=(2,2))
+                            st.pyplot(shap_id(ID))
+                        except :
+                            st.warning('programme error programme') 
+                            st.write(':dizzy_face:')             
     
     
     
