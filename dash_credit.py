@@ -7,14 +7,13 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.neighbors import KNeighborsClassifier
 from PIL import Image
 import requests
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 #import plotly
 import os
 from zipfile import ZipFile, BadZipFile
 import pickle
 import sys
-
-#import shap
+import shap
 
 # Features
 feat = ['SK_ID_CURR','TARGET','DAYS_BIRTH','NAME_FAMILY_STATUS','CNT_CHILDREN',
