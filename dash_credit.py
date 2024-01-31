@@ -49,3 +49,15 @@ with st.sidebar:
     st.markdown("-----")
         
     st.write("By: Amit GAUTAM")
+
+if page == "Home":
+    st.title("💵 Credit Score Dashboard - Customer Page")
+    ".\n"
+    #.\n"
+        
+    st.markdown("This is an interactive dashboard website which lets the clients to know about their credit demands\n"
+                "approved ou refused. The predictions are calculted automatically with the help of machine learning algorithm.\n"
+                                    
+                "\nThis dashboard is composed of following pages :\n"
+                "- **Customer**: to find out all the information related to the customer.\n")
+
