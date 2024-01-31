@@ -95,6 +95,14 @@ except Exception as e:
     # Print the exception message for debugging
     print(f"Error reading CSV from ZIP: {e}")
 
+try:
+    # Append the DataFrames
+    #raw_app = raw_train.append(raw_test).reset_index(drop=True)
+    app = train.append(test).reset_index(drop=True)
+        
+except Exception as e:
+    # Print the exception message for debugging
+    print(f"Error : {e}")
 
 
 
