@@ -137,7 +137,7 @@ if page == 'Customer portfolio':
             col1, col2,col3 = st.columns(3)
             #plt.ioff()
             with col1:
-                fig = plt.figure(figsize=(4,4))
+                fig = plt.figure(figsize=(4,4))              #### problem with matplotlib.pyplot
                 bins = (raw_app['AGE'].max()-raw_app['AGE'].min())//5
                 pt = sns.histplot(data=raw_app, x='AGE', hue='TARGET',bins=bins,palette=['royalblue','red'],alpha=.5)
                 plt.xlabel('AGE',fontsize=12)
