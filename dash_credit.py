@@ -35,7 +35,7 @@ st.set_page_config(
     
 # Sidebar
 with st.sidebar:
-    st.write("Credit Score Dashboard")
+    st.title("Credit Score Dashboard")
     logo_path = "logo.png"
     try:
         logo = Image.open(logo_path)
