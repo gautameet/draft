@@ -28,7 +28,6 @@ print(zip_file_train.namelist())
 
 
 
-
 ###
 ## Page configuration initialisation
 st.set_page_config(
