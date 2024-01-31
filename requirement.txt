@@ -7,6 +7,6 @@ plotly
 os
 zipfile
 pickle
-matplotlib
+matplotlib.pyplot
 math
 shap
