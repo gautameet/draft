@@ -19,3 +19,25 @@ feat = ['SK_ID_CURR','TARGET','DAYS_BIRTH','NAME_FAMILY_STATUS','CNT_CHILDREN',
 
 # Nombre de ligne
 num_rows = 100000
+
+
+
+
+
+###
+## Page configuration initialisation
+st.set_page_config(
+    page_title="Credit Score Dashboard",
+    page_icon="💵",
+    layout="wide",
+    initial_sidebar_state="expanded")
+    
+# Sidebar
+with st.sidebar:
+    st.write("Credit Score Dashboard")
+    logo_path = "logo.png"
+    try:
+        logo = Image.open(logo_path)
+        st.image(logo, width=250)
+    except FileNotFoundError:
+        st.error(f"Error: Logo file not found at {logo_path}")
