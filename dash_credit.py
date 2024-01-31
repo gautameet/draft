@@ -22,6 +22,9 @@ feat = ['SK_ID_CURR','TARGET','DAYS_BIRTH','NAME_FAMILY_STATUS','CNT_CHILDREN',
 # Nombre de ligne
 num_rows = 100000
 
+# Original Data
+zip_file_train = ZipFile('./sample_application_train.zip')
+print(zip_file_train.namelist())
 
 
 
