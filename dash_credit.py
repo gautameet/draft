@@ -30,7 +30,9 @@ try:
 #with ZipFile(zip_file_train, 'r') as zip_train:
 except Exception as e:
     print(f'Error:{e}')
-
+        
+zip_file_test = ZipFile('./application_test.zip')
+print(zip_file_test.namelist())
 
 ###
 ## Page configuration initialisation
