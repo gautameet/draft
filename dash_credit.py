@@ -81,6 +81,21 @@ except Exception as e:
     # Print the exception message for debugging
     print(f"Error reading CSV from ZIP: {e}")     
     
+zip_file_test = './data_test.zip'
+csv_file_name = 'data_test.csv'
+
+try:
+    # Open the ZIP file
+    with ZipFile(zip_file_test, 'r') as zip_test:
+        # Read the CSV file from the ZIP archive
+        test = pd.read_csv(zip_test.open(csv_file_name))
+
+    # Now 'test' contains the DataFrame from the CSV file
+except Exception as e:
+    # Print the exception message for debugging
+    print(f"Error reading CSV from ZIP: {e}")
+
+
 
 
 
