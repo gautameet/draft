@@ -7,7 +7,7 @@ import altair as alt              # for data visualtization
 #from sklearn.neighbors import KNeighborsClassifier
 from PIL import Image
 import requests
-import matplotlib as plt
+#import matplotlib.pyplot as plt
 #import plotly
 import os
 from zipfile import ZipFile, BadZipFile
