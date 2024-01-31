@@ -5,7 +5,6 @@ import altair as alt              # for data visualtization
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.neighbors import NearestNeighbors
 #from sklearn.neighbors import KNeighborsClassifier
-from sklearn.neighbors import NearestNeighbors
 from PIL import Image
 import requests
 #import matplotlib.pyplot as plt
@@ -108,6 +107,11 @@ except Exception as e:
  # Modele voisin
     knn = NearestNeighbors(n_neighbors=10)
     knn.fit(train.drop(['SK_ID_CURR','TARGET'], axis=1))
+
+
+
+
+
 
 
 
