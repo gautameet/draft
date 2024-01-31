@@ -1,5 +1,4 @@
 import math
-import shap
 import streamlit as st
 import altair as alt              # for data visualtization
 import sklearn
@@ -12,3 +11,4 @@ import plotly
 import os
 from zipfile import ZipFile, BadZipFile
 import pickle
+import shap
