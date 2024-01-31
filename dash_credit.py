@@ -130,3 +130,17 @@ if page == "Customer":
 # Customer portfolio analysis        
 if page == 'Customer portfolio':
     st.header("💵 Welcome to Customer portfolio analysis")
+    with st.spinner('Analysing...'):
+        with st.container():            
+            st.write("#### Customer Profile")
+            col1, col2,col3 = st.columns(3)
+            plt.ioff()
+            with col1:
+                fig = plt.figure(figsize=(4,4))
+                bins = (raw_app['AGE'].max()-raw_app['AGE'].min())//5
+                pt = sns.histplot(data=raw_app, x='AGE', hue='TARGET',bins=bins,palette=['royalblue','red'],alpha=.5)
+                plt.xlabel('AGE',fontsize=12)
+                plt.ylabel('')
+                plt.legend(['having difficulty','without difficulty'],loc='lower center',bbox_to_anchor=(0.5, -0.35),fancybox=True, shadow=True, ncol=5)
+                st.pyplot(fig)
+        
