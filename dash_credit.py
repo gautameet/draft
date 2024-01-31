@@ -129,4 +129,4 @@ if page == "Customer":
 
 # Customer portfolio analysis        
 if page == 'Customer portfolio':
-    st.header("💵 <elcome to Customer portfolio analysis")
+    st.header("💵 Welcome to Customer portfolio analysis")
