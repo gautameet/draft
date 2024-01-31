@@ -104,7 +104,9 @@ except Exception as e:
     # Print the exception message for debugging
     print(f"Error : {e}")
 
-
+ # Modele voisin
+    knn = NearestNeighbors(n_neighbors=10)
+    knn.fit(train.drop(['SK_ID_CURR','TARGET'], axis=1))
 
 
 
