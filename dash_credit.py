@@ -134,7 +134,7 @@ if page == 'Customer portfolio':
         with st.container():            
             st.write("#### Customer Profile")
             col1, col2,col3 = st.columns(3)
-            plt.ioff()
+            #plt.ioff()
             with col1:
                 fig = plt.figure(figsize=(4,4))
                 bins = (raw_app['AGE'].max()-raw_app['AGE'].min())//5
