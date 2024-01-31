@@ -129,4 +129,4 @@ if page == "Customer":
 
 # Customer portfolio analysis        
 if page == 'Customer portfolio':
-    st.write("### Customer portfolio analysis")
+    st.header("### Customer portfolio analysis")
