@@ -143,4 +143,23 @@ if page == 'Customer portfolio':
                 plt.ylabel('')
                 plt.legend(['having difficulty','without difficulty'],loc='lower center',bbox_to_anchor=(0.5, -0.35),fancybox=True, shadow=True, ncol=5)
                 st.pyplot(fig)
+
+            with col2:
+                fig = plt.figure(figsize=(3,3))                
+                pt = sns.barplot(raw_app['NAME_FAMILY_STATUS'][raw_app['TARGET']==1],raw_app['CNT_CHILDREN'][raw_app['TARGET']==1],color='red',alpha=.5,ci=None,edgecolor='black')
+                pt = sns.barplot(raw_app['NAME_FAMILY_STATUS'][raw_app['TARGET']==0],raw_app['CNT_CHILDREN'][raw_app['TARGET']==0],color='royalblue',alpha=.5,ci=None,edgecolor='black')
+            #pt = sns.barplot(x='NAME_FAMILY_STATUS', y='CNT_CHILDREN', hue='TARGET', data=raw_app,palette=['royalblue','red'],alpha=.7)
+                plt.setp(pt.get_xticklabels(),rotation=45,fontsize=7)
+                plt.setp(pt.get_yticklabels(),fontsize=5)
+                st.pyplot(fig)
+            with col3:
+                fig = plt.figure(figsize=(4.5,4.5))
+                pt = sns.barplot(raw_app['NAME_INCOME_TYPE'][raw_app['TARGET']==1],raw_app['AMT_INCOME_TOTAL'][raw_app['TARGET']==1],color='red',alpha=.5,ci=None,edgecolor='black')
+                pt = sns.barplot(raw_app['NAME_INCOME_TYPE'][raw_app['TARGET']==0],raw_app['AMT_INCOME_TOTAL'][raw_app['TARGET']==0],color='royalblue',alpha=.5,ci=None,edgecolor='black')
+                #pt = sns.barplot(x='NAME_INCOME_TYPE', y='AMT_INCOME_TOTAL', hue='TARGET', data=raw_app,palette=['royalblue','red'],alpha=.7)
+                plt.setp(pt.get_xticklabels(),rotation=45,fontsize=7)
+                plt.setp(pt.get_yticklabels(),fontsize=7)
+                st.pyplot(fig)
+        
+        st.markdown("-----")
         
