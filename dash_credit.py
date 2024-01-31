@@ -1,6 +1,7 @@
 import math
 import streamlit as st
 import altair as alt              # for data visualtization
+
 import sklearn
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
