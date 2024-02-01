@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.30.0
 altair
 scikit-learn==1.4.0
 PIL
@@ -7,6 +7,6 @@ plotly
 os
 zipfile
 pickle
-matplotlib.pyplot
+matplotlib
 math
 shap==0.44.1
