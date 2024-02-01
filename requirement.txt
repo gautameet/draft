@@ -6,7 +6,7 @@ requests
 plotly
 os
 zipfile
-pickle
+#pickle
 matplotlib
 math
 shap==0.44.1
