@@ -1,6 +1,6 @@
 streamlit==1.30.0
 altair
-scikit-learn==1.4.0
+scikit_learn==1.4.0
 PIL
 requests
 plotly
