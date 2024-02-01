@@ -9,4 +9,4 @@ zipfile
 pickle
 matplotlib.pyplot
 math
-shap
+shap==0.44.1
