@@ -1,6 +1,7 @@
 import math
 import streamlit as st
 import altair as alt              # for data visualtization
+import shap
 import sklearn
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.neighbors import NearestNeighbors
@@ -13,7 +14,7 @@ import os
 from zipfile import ZipFile, BadZipFile
 import pickle
 import sys
-import shap
+
 
 # Features
 feat = ['SK_ID_CURR','TARGET','DAYS_BIRTH','NAME_FAMILY_STATUS','CNT_CHILDREN',
