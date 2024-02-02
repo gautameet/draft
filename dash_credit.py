@@ -8,7 +8,7 @@ import altair as alt              # for data visualtization
 #from sklearn.neighbors import KNeighborsClassifier
 from PIL import Image
 import requests
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #import plotly
 import os
 os.environ["SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL"] = "True"
