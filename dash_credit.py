@@ -1,8 +1,8 @@
 import math
 import streamlit as st
 import altair as alt              # for data visualtization
-#import shap
-#import sklearn
+import shap
+import sklearn
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.neighbors import NearestNeighbors
 #from sklearn.neighbors import KNeighborsClassifier
@@ -11,6 +11,7 @@ import requests
 import matplotlib.pyplot as plt
 #import plotly
 import os
+os.environ["SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL"] = "True"
 from zipfile import ZipFile, BadZipFile
 import pickle
 import sys
